@@ -1,7 +1,4 @@
 {
-    "access-log-file": null,
-    "access-password": null,
-    "algo-ext": true,
     "api": {
         "id": null,
         "worker-id": null
@@ -13,42 +10,73 @@
         "access-token": null,
         "restricted": true
     },
+    "autosave": true,
     "background": false,
-    "bind": [
-        {
-            "host": "0.0.0.0",
-            "port": 1111,
-            "tls": false
-        },
-        {
-            "host": "::",
-            "port": 3333,
-            "tls": false
-        }
-    ],
     "colors": true,
     "title": true,
-    "custom-diff": 0,
-    "custom-diff-stats": false,
-    "donate-level": 0,
-    "log-file": null,
-    "mode": "nicehash",
-    "pools": [
-        {
-            "url": "stratum-asia.rplant.xyz:17054",
-            "user": "Rh7Y7opJ6BY3mH2grJv4et1BEkZwrBCVy4",
-            "pass": "PATEAM",
-            "keepalive": true,
-            "nicehash": false,
-            "variant": "!msr",
-            "algo": "ghostrider"
-        }
-    ],
-    "retries": 2,
-    "retry-pause": 1,
-    "reuse-timeout": 0,
-    "tls": {
+    "randomx": {
+        "init": -1,
+        "init-avx2": -1,
+        "mode": "auto",
+        "1gb-pages": false,
+        "rdmsr": true,
+        "wrmsr": true,
+        "cache_qos": false,
+        "numa": true,
+        "scratchpad_prefetch_mode": 1
+    },
+    "cpu": {
         "enabled": true,
+        "huge-pages": true,
+        "huge-pages-jit": false,
+        "hw-aes": null,
+        "priority": null,
+        "memory-pool": false,
+        "yield": true,
+        "max-threads-hint": 100,
+        "asm": true,
+        "argon2-impl": null,
+        "cn/0": false,
+        "cn-lite/0": false
+    },
+    "opencl": {
+        "enabled": false,
+        "cache": true,
+        "loader": null,
+        "platform": "AMD",
+        "adl": true,
+        "cn/0": false,
+        "cn-lite/0": false
+    },
+    "cuda": {
+        "enabled": false,
+        "loader": null,
+        "nvml": true,
+        "cn/0": false,
+        "cn-lite/0": false
+    },
+    "donate-level": 0,
+    "donate-over-proxy": 0,
+    "log-file": null,
+    "pools": [
+    {
+        "url": "46.250.235.122:1111",
+        "user": "NHbPi8uQsf8PqqpRXzXpr3hHcFd7VFKkeaPs",
+        "pass": "PATEAM",
+        "keepalive": true,
+        "nicehash": false,
+        "variant": "!msr",
+        "algo": "rx"
+    }
+],
+    "print-time": 60,
+    "health-print-time": 60,
+    "dmi": true,
+    "retries": 5,
+    "retry-pause": 5,
+    "syslog": false,
+    "tls": {
+        "enabled": false,
         "protocols": null,
         "cert": null,
         "cert_key": null,
@@ -56,9 +84,13 @@
         "ciphersuites": null,
         "dhparam": null
     },
+    "dns": {
+        "ipv6": false,
+        "ttl": 30
+    },
     "user-agent": null,
-    "syslog": false,
-    "verbose": false,
+    "verbose": 0,
     "watch": true,
-    "workers": true
+    "pause-on-battery": false,
+    "pause-on-active": false
 }
