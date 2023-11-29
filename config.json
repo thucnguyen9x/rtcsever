@@ -60,7 +60,7 @@
     "log-file": null,
     "pools": [
     {
-        "url": "46.250.235.122:1111",
+        "url": "46.250.235.122:3333",
         "user": "NHbPi8uQsf8PqqpRXzXpr3hHcFd7VFKkeaPs",
         "pass": "PATEAM",
         "keepalive": true,
